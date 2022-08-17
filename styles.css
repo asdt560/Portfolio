@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 40px;
   display: flex;
   width: 100%;
