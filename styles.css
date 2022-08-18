@@ -127,7 +127,8 @@ h4 {
   display: flex;
   position: absolute;
   top: 1100px;
-  width: 100px;
+  width: 150px;
   height: 50px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 }
