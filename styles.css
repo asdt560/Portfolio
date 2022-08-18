@@ -1,10 +1,12 @@
 body {
   background-color: #191765;
-  height: 100vh;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 40px;
   display: flex;
   width: 100%;
@@ -119,4 +121,13 @@ li {
 h4 {
   position: relative;
   top: 20px;
+}
+
+#links {
+  display: flex;
+  position: absolute;
+  top: 1100px;
+  width: 100px;
+  height: 50px;
+  justify-content: space-between;
 }
