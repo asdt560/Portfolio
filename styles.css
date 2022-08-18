@@ -94,16 +94,19 @@ h2 {
 
 #container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-items: space-around;
-  height: 500px;
+  height: 420px;
   width: 300px;
   padding-left: 30px;
 }
 
-.blue {
+.blue-list {
   color: #9490ff;
+  font-size: 18px;
+  padding-top: 25px;
+  margin-bottom: -10px;
 }
 
 ul {
@@ -120,7 +123,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 50%;
   min-width: 0;
 }
@@ -196,7 +199,7 @@ h3 {
   position: absolute;
   width: 375px;
   height: 3461px;
-  top: 1100px;
+  top: 1300px;
   grid-template: 100px 30px 770px 770px 770px / 375px;
 }
 
@@ -294,7 +297,7 @@ h4 {
 
 #about {
   position: absolute;
-  top: 4450px;
+  top: 4650px;
   display: flex;
   width: 350px;
   flex-direction: column;
