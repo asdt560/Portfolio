@@ -1,16 +1,18 @@
 body {
   background-color: #191765;
-  height: 200vh;
+  height: 1300px;
   display: flex;
   justify-content: center;
+  width: 370px;
+  align-items: center;
 }
 
 nav {
   position: fixed;
   top: 40px;
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  width: 330px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -131,4 +133,33 @@ h4 {
   height: 50px;
   align-items: center;
   justify-content: space-around;
+}
+
+#image-container {
+  position: absolute;
+  top: 25px;
+  width: 400px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#ellipse18 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-color: #edecff;
+  align-self: flex-start;
+  border-radius: 50%;
+  filter: blur(24px);
+}
+
+#ellipse19 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background-color: #edecff;
+  filter: blur(24px);
+  align-self: flex-end;
 }
