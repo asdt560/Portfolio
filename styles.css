@@ -1,0 +1,170 @@
+body {
+  background-color: #191765;
+  height: 1300px;
+  display: flex;
+  justify-content: center;
+  width: 370px;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 40px;
+  display: flex;
+  width: 330px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeholder {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+#menu {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+  width: 50px;
+}
+
+span.line {
+  background-color: white;
+  height: 1px;
+  width: 25px;
+  margin: 5px;
+}
+
+#headline {
+  position: relative;
+  top: -520px;
+}
+
+header {
+  display: flex;
+  width: 300px;
+  height: 75px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100px;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #7d73fc;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#support {
+  position: absolute;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+#blurb {
+  text-align: center;
+  color: #c8c8d4;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.divide {
+  border: 1px solid #646369;
+  width: 300px;
+  margin: 30px;
+  align-self: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: space-around;
+  height: 500px;
+  width: 300px;
+  padding-left: 30px;
+}
+
+.blue {
+  color: #9490ff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  color: #f5f5ff;
+  padding-top: 15px;
+}
+
+.subsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 0;
+}
+
+h4 {
+  position: relative;
+  top: 20px;
+}
+
+#links {
+  display: flex;
+  position: absolute;
+  top: 1100px;
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#image-container {
+  position: absolute;
+  top: 25px;
+  width: 400px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#ellipse18 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-color: #edecff;
+  align-self: flex-start;
+  border-radius: 50%;
+  filter: blur(24px);
+}
+
+#ellipse19 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background-color: #edecff;
+  filter: blur(24px);
+  align-self: flex-end;
+}
