@@ -55,7 +55,7 @@ header {
   justify-content: center;
 }
 
-h1 {
+.title {
   font-family: 'Roboto', sans-serif;
   color: #7d73fc;
   font-size: 48px;
@@ -290,4 +290,25 @@ h4 {
 
 .project-button:disabled {
   background: #2a2b33;
+}
+
+#about {
+  position: absolute;
+  top: 4450px;
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  height: 600px;
+}
+
+#about-blurb {
+  position: relative;
+  top: -100px;
+}
+
+#resume {
+  width: 150px;
+  font-size: 15px;
+  position: relative;
+  top: -100px;
 }
