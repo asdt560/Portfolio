@@ -40,6 +40,11 @@ span.line {
   margin: 5px;
 }
 
+#headline {
+  position: relative;
+  top: -520px;
+}
+
 header {
   display: flex;
   width: 300px;
