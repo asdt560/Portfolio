@@ -2,7 +2,7 @@
 
 # Portfolio: Setup and Mobile First
 
-> The start of the Portfolio project, possessing only the toolbar and headline sections.
+> The start of the Portfolio project, possessing only the toolbar and headline sections. Now expanded with Works and about sections.
 
 
 ## Built With
