@@ -8,8 +8,8 @@ body {
 }
 
 nav {
-  position: fixed;
-  top: 40px;
+  position: absolute;
+  top: -40px;
   display: flex;
   width: 330px;
   justify-content: space-between;
