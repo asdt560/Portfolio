@@ -9,7 +9,7 @@
 
 - HTML/CSS
 
-## Author
+## Authors
 
 👤 **Justo Rago**
 
@@ -17,6 +17,11 @@
 - Twitter: [@twitterhandle](https://twitter.com/JustoRago)
 - LinkedIn: [LinkedIn]( www.linkedin.com/in/justo-rago-0714b5208)
 
+👤 **Mátyás Gombos**
+
+- GitHub: [@MattGomb](https://github.com/MattGomb)
+- Twitter: [@MtysGombos1](https://twitter.com/MtysGombos1)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/gombos-mátyás-28139771/)
 
 ## 🤝 Contributing
 
