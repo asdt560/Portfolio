@@ -315,3 +315,60 @@ h4 {
   position: relative;
   top: -100px;
 }
+
+#form-container {
+  position: absolute;
+  top: 5000px;
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  align-self: center;
+  height: 48px;
+  margin: 12px;
+  box-sizing: border-box;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.input-field:valid {
+  border: 1px solid #9490ff;
+  color: #191765;
+}
+
+.input-field.message {
+  height: 148px;
+  padding: 12px;
+}
+
+#contact-title {
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #9490ff;
+  position: relative;
+  top: 50px;
+  align-self: center;
+}
+
+#form-blurb {
+  position: relative;
+  bottom: 40px;
+}
