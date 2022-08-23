@@ -383,7 +383,6 @@ footer {
 .links-footer {
   display: flex;
   flex-direction: column;
-
 }
 
 #footer-span {
@@ -400,13 +399,13 @@ footer {
 }
 
 #footer-email {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
-margin-top: 0;
-padding-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebefff;
+  margin-top: 0;
+  padding-bottom: 40px;
 }
