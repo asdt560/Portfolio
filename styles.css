@@ -358,37 +358,41 @@ form {
   width: 300px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 32px;
   display: flex;
   justify-content: center;
   color: #9490ff;
   position: relative;
-  top: 50px;
+  top: 70px;
   align-self: center;
+  padding: 20px;
 }
 
 #form-blurb {
   position: relative;
-  bottom: 40px;
+  bottom: 20px;
+  color: #f5f5ff;
+  font-family: 'Inter', sans-serif;
 }
 
 footer {
   position: absolute;
-  top: 4685px;
-  left: 125px;
+  top: 5700px;
   width: 100%;
 }
 
 .links-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #footer-span {
   border-top: 1px solid #646369;
-  width: 375px;
+  width: 410px;
   margin-top: 71px;
+  align-self: center;
 }
 
 #footer-list {
