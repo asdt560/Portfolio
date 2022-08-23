@@ -372,3 +372,41 @@ form {
   position: relative;
   bottom: 40px;
 }
+
+footer {
+  position: absolute;
+  top: 4685px;
+  left: 125px;
+  width: 100%;
+}
+
+.links-footer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#footer-span {
+  border-top: 1px solid #646369;
+  width: 375px;
+  margin-top: 71px;
+}
+
+#footer-list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 0;
+}
+
+#footer-email {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+margin-top: 0;
+padding-bottom: 40px;
+}
