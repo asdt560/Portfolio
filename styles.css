@@ -169,11 +169,15 @@ h3 {
 
 #works {
   display: grid;
-  gap: 40px;
+  gap: 20px;
   grid-template: 0.25fr 1px 7fr 7fr 7fr 7fr 1px / 100%;
-  padding: 10px;
+  padding: 20px;
   margin-top: 85px;
   align-items: center;
+  background-image: url(./images/portfolio-background-shapes-mobile@2x.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 h4 {
@@ -189,7 +193,6 @@ h4 {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 12px;
   justify-content: center;
 }
 
