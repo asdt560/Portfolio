@@ -30,6 +30,19 @@ nav {
 
 #menu-div {
   padding-right: 10%;
+  display: flex;
+}
+
+.navlink {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 10px;
+  text-decoration: none;
 }
 
 .placeholder {
@@ -65,12 +78,14 @@ span.line {
   font-family: 'Roboto', sans-serif;
   color: #7d73fc;
   font-size: 48px;
+  margin-bottom: 12px;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 30px;
+  margin-top: 12px;
 }
 
 #support {
@@ -80,28 +95,35 @@ h2 {
   justify-content: center;
 }
 
+#list-and-span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+}
+
 .blurb {
   text-align: center;
   color: #c8c8d4;
   font-size: 20px;
   font-weight: lighter;
-  width: 95%;
+  max-width: 300px;
   padding-bottom: 20px;
 }
 
 .divide {
   border: 1px solid #646369;
-  width: 330px;
+  width: 100%;
   align-self: center;
 }
 
 #list-container {
   display: flex;
   flex-wrap: wrap;
-  height: 460px;
-  width: 290px;
-  align-self: center;
-  margin: 20px;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 50px;
 }
 
 .blue-list {
@@ -128,14 +150,8 @@ li {
 .subsection {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 50%;
-}
-
-h3 {
-  position: relative;
-  top: 20px;
+  width: 130px;
 }
 
 #links {
@@ -188,6 +204,7 @@ h4 {
   line-height: 52px;
   color: #9490ff;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .card {
@@ -207,12 +224,17 @@ h4 {
   font-weight: 400;
 }
 
+.card-text {
+  align-self: center;
+}
+
 .blurb2 {
   font-family: 'Inter', sans-serif;
   color: #c8c8d4;
   font-size: 20px;
   font-weight: lighter;
   font-weight: 300;
+  width: 327px;
 }
 
 .card-list {
@@ -365,4 +387,173 @@ footer {
   color: #ebefff;
   margin-top: 0;
   padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .navlink {
+    display: flex;
+  }
+
+  body {
+    background-image: url(./images/two\ circles\ header.svg);
+    background-repeat: no-repeat;
+    background-position: top 180px center;
+  }
+
+  .title {
+    font-family: 'Roboto', sans-serif;
+    color: #7d73fc;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 105px;
+  }
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+  }
+
+  .blurb {
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 114px;
+    color: #9490ff;
+    margin: 0;
+    text-transform: initial;
+    margin-bottom: -70px;
+  }
+
+  #list-container {
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 450px;
+    align-self: center;
+    padding-left: 100px;
+  }
+
+  .card-text {
+    align-self: flex-end;
+    padding-left: 24px;
+    margin-right: 24px;
+  }
+
+  .blurb2 {
+    font-family: 'Roboto', sans-serif;
+    width: 440px;
+    line-height: 28px;
+  }
+
+  .project-button {
+    font-size: 15px;
+    width: 106px;
+    font-weight: 700;
+  }
+
+  .card-list {
+    width: fit-content;
+    padding-left: 0;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .placeholder-image {
+    width: 684px;
+    height: 448px;
+  }
+
+  .placeholder-image.even {
+    order: 1;
+  }
+
+  #works {
+    grid-template: 1fr 1px 4fr 4fr 4fr 4fr 1px / 100%;
+    gap: 90px;
+    background-image: url(./images/Group\ 65.svg);
+    background-repeat: no-repeat;
+    background-position: top 220px center;
+    background-size: initial;
+  }
+
+  #about-blurb {
+    max-width: 600px;
+  }
+
+  #form-container {
+    align-self: center;
+    width: 50%;
+  }
+
+  #contact-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+  }
+
+  #form-blurb {
+    max-width: 800px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #form-button {
+    align-self: center;
+    width: 160px;
+    margin-top: 90px;
+  }
+
+  .links-footer {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+  }
+
+  .footer-list {
+    width: 200px;
+    margin: 0;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .footer-list > li {
+    padding: 10px;
+    padding-bottom: 0;
+    align-self: center;
+  }
+
+  #footer-email {
+    width: 200px;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    align-self: center;
+  }
 }
