@@ -1,19 +1,35 @@
 body {
   background-color: #191765;
-  height: 1300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 380px;
-  align-items: center;
+  width: 100%;
+  background-image: url(./images/Top-circles.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+header {
+  display: flex;
+  width: 100%;
 }
 
 nav {
-  position: absolute;
-  top: -40px;
   display: flex;
-  width: 330px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
+}
+
+#logo-div {
+  margin-right: 20%;
+  padding-left: 10%;
+}
+
+#menu-div {
+  padding-right: 10%;
 }
 
 .placeholder {
@@ -30,7 +46,6 @@ nav {
   flex-direction: column;
   height: 100%;
   border: none;
-  width: 50px;
 }
 
 span.line {
@@ -40,42 +55,29 @@ span.line {
   margin: 5px;
 }
 
-#headline {
-  position: relative;
-  top: -520px;
-}
-
-header {
+.headline {
   display: flex;
-  width: 300px;
-  height: 75px;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 100px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
   font-family: 'Roboto', sans-serif;
   color: #7d73fc;
   font-size: 48px;
-  text-align: center;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   color: white;
-  text-align: center;
   font-size: 30px;
 }
 
 #support {
-  position: absolute;
-  top: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  justify-content: center;
 }
 
 .blurb {
@@ -83,30 +85,34 @@ h2 {
   color: #c8c8d4;
   font-size: 20px;
   font-weight: lighter;
+  width: 95%;
+  padding-bottom: 20px;
 }
 
 .divide {
   border: 1px solid #646369;
-  width: 360px;
-  margin: 30px;
+  width: 330px;
   align-self: center;
 }
 
-#container {
+#list-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-items: space-around;
-  height: 420px;
-  width: 300px;
-  padding-left: 30px;
+  height: 460px;
+  width: 290px;
+  align-self: center;
+  margin: 20px;
 }
 
 .blue-list {
   color: #9490ff;
   font-size: 18px;
-  padding-top: 25px;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+#skills-list {
+  padding-bottom: 20px;
 }
 
 ul {
@@ -123,9 +129,8 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 50%;
-  min-width: 0;
 }
 
 h3 {
@@ -134,50 +139,19 @@ h3 {
 }
 
 #links {
-  display: flex;
-  position: absolute;
-  top: 1100px;
-  width: 150px;
-  height: 50px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#image-container {
-  position: absolute;
-  top: 25px;
-  width: 400px;
-  height: 900px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-#ellipse18 {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  background-color: #edecff;
-  align-self: flex-start;
-  border-radius: 50%;
-  filter: blur(24px);
-}
-
-#ellipse19 {
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  background-color: #edecff;
-  filter: blur(24px);
-  align-self: flex-end;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #internal {
-  position: absolute;
-  top: 1175px;
+  padding-top: 40px;
 }
 
-#work-link {
+.work-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,39 +170,31 @@ h3 {
 #works {
   display: grid;
   gap: 40px;
-  position: absolute;
-  width: 375px;
-  height: 3461px;
-  top: 1300px;
-  grid-template: 100px 30px 770px 770px 770px / 375px;
+  grid-template: 0.25fr 1px 7fr 7fr 7fr 7fr 1px / 100%;
+  padding: 10px;
+  margin-top: 85px;
+  align-items: center;
 }
 
 h4 {
-  width: 300px;
-  height: 104px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   color: #9490ff;
-  padding-left: 10px;
-}
-
-#span3 {
-  position: relative;
-  left: -25px;
-  top: 25px;
+  margin: 0;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   padding: 12px;
-  align-content: center;
+  justify-content: center;
+}
+
+.placeholder-image {
+  width: 100%;
 }
 
 .card-title {
@@ -241,15 +207,9 @@ h4 {
 .blurb2 {
   font-family: 'Inter', sans-serif;
   color: #c8c8d4;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: lighter;
   font-weight: 300;
-}
-
-#background {
-  width: 390px;
-  position: relative;
-  top: 700px;
 }
 
 .card-list {
@@ -260,6 +220,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  align-self: center;
 }
 
 .card-list > li {
@@ -296,42 +257,35 @@ h4 {
 }
 
 #about {
-  position: absolute;
-  top: 4650px;
   display: flex;
-  width: 350px;
   flex-direction: column;
-  height: 600px;
+  align-items: center;
+  height: fit-content;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
-#about-blurb {
-  position: relative;
-  top: -100px;
+#about-title {
+  margin: 30px;
 }
 
 #resume {
   width: 150px;
   font-size: 15px;
-  position: relative;
-  top: -100px;
 }
 
 #form-container {
-  position: absolute;
-  top: 5000px;
   display: flex;
-  width: 350px;
   flex-direction: column;
-  height: 400px;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 600px;
-  align-items: center;
+  width: calc(100% - 24px);
 }
 
 .input-field {
@@ -345,7 +299,7 @@ form {
 }
 
 .input-field:valid {
-  border: 1px solid #9490ff;
+  border: 1.5px solid #9490ff;
   color: #191765;
 }
 
@@ -355,7 +309,6 @@ form {
 }
 
 #contact-title {
-  width: 300px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -363,23 +316,20 @@ form {
   display: flex;
   justify-content: center;
   color: #9490ff;
-  position: relative;
-  top: 70px;
   align-self: center;
-  padding: 20px;
+  margin: 0;
+  margin-top: 70px;
 }
 
 #form-blurb {
-  position: relative;
-  bottom: 20px;
   color: #f5f5ff;
   font-family: 'Inter', sans-serif;
 }
 
 footer {
-  position: absolute;
-  top: 5700px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .links-footer {
@@ -390,12 +340,12 @@ footer {
 
 #footer-span {
   border-top: 1px solid #646369;
-  width: 410px;
+  width: 100%;
   margin-top: 71px;
   align-self: center;
 }
 
-#footer-list {
+.footer-list {
   display: flex;
   justify-content: space-between;
   width: 200px;

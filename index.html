@@ -9,52 +9,40 @@
     <title>Portfolio</title>
 </head>
 <body>
-  <div id="image-container">
-    <img id="ellipses" src="./images/Top-circles.png" alt="circles">
-    <img id="background" src="./images/portfolio-background-shapes-mobile@2x.png" alt="background">
-  </div>
-  <header>
+  <header id="navbar">
     <nav>
-      <a class="placeholder">John Doe</a>
-      <button id="menu">
+      <div id="logo-div">
+        <a class="placeholder">John Doe</a>
+      </div>
+      <div id="menu-div">
+        <button id="menu">
         <span class="line"></span> 
         <span class="line"></span>
         <span class="line"></span>
       </button>
+    </div> 
     </nav>
   </header>
   <section class="headline">
-    <header id="headline">
       <h1 class="title">Justo Rago</h1>
       <h2>Software Developer</h2>
-    </header>
   </section>
   <section id="support">
     <p class="blurb">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hesitate to contact me.</p>
     <span class="divide"></span>
-    <ul id="container">
-      <li class="blue-list">Language</li>
+    <ul id="list-container">   
       <li class="subsection">
         <ul>
+          <li class="blue-list">Languages</li>
           <li>Javascript</li>
           <li>Ruby</li>
           <li>Html</li>
           <li>Css</li>
         </ul>
       </li>
-      <li class="blue-list">Skills</li>
-      <li>
+      <li class="subsection">
         <ul>
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
-      </li>
-      <li class="blue-list">Frameworks</li>
-      <li>
-        <ul>
+          <li class="blue-list">Frameworks</li>
           <li>Bootstrap</li>
           <li>Ruby on Rails</li>
           <li>RSPec</li>
@@ -62,18 +50,40 @@
           <li>Selenium</li>
         </ul>
       </li>
+      <li class="subsection">
+        <ul id="skills-list">
+          <li class="blue-list" >Skills</li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </li>
     </ul>
     <span class="divide"></span>
   </section>
   <section id="links">
-    <a href="https://github.com/asdt560"><img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
-    <a href="https://www.linkedin.com/in/justo-rago-0714b5208/"><img src="./images/Normal-Button/Tertiary/Icons/Group.png" alt="LinkedIn"></a>
-    <a href="https://angel.co/"><img src="./images/Normal-Button3/Tertiary/Icons/Vector.png" alt="AngelList"></a>
-    <a href="https://twitter.com/JustoRago"><img src="./images/Normal-Button2/Tertiary/Icons/Vector.png" alt="Twitter"></a>
-    <a href="https://medium.com/"><img src="./images/Normal-Button1/Tertiary/Icons/Vector.png" alt="Medium"></a>
-  </section>
-  <section id="internal">
-    <a id="work-link" href="#works"><img src="./images/Group-55.png" alt="arrow">Work</a>
+    <ul class="footer-list">
+      <li>
+        <a href="https://github.com/asdt560"><img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/justo-rago-0714b5208/"><img src="./images/Normal-Button/Tertiary/Icons/Group.png" alt="LinkedIn"></a>
+      </li>
+      <li>
+        <a href="https://angel.co/"><img src="./images/Normal-Button3/Tertiary/Icons/Vector.png" alt="AngelList"></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/JustoRago"><img src="./images/Normal-Button2/Tertiary/Icons/Vector.png" alt="Twitter"></a>
+      </li>
+      <li>
+        <a href="https://medium.com/"><img src="./images/Normal-Button1/Tertiary/Icons/Vector.png" alt="Medium"></a>
+      </li>
+    </ul>
+    <section id="internal">
+      <a class="work-link" href="#works"><img src="./images/Group-55.png" alt="arrow">Work</a>
+    </section>
   </section>
   <section id="works">
     <h4>MY RECENT WORK</h4>
@@ -121,14 +131,15 @@
         <li>Javascript</li>
       </ul>
       <button class="project-button">See Project</button>
-      <span class="divide"></span>
     </section>
+    <span class="divide"></span>
   </section>
   <section id="about">
-    <h6 class="title">About Me</h6>
+    <h6 class="title" id="about-title">About Me</h6>
     <p id="about-blurb" class="blurb">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
     <button id="resume" class="project-button">Get my resume</button>
   </section>
+  <span class="divide"></span>
   <section id="form-container">
     <h6 id="contact-title">CONTACT US</h6>
     <p class="blurb" id="form-blurb">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it.</p>
@@ -140,9 +151,9 @@
     </form>
   </section>
   <footer>
+    <span id="footer-span"></span>
     <section class="links-footer">
-      <span id="footer-span"></span>
-      <ul id="footer-list">
+      <ul class="footer-list">
       <li>
         <a href="https://github.com/asdt560"><img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
       </li>
@@ -158,9 +169,9 @@
       <li>
         <a href="https://medium.com/"><img src="./images/Normal-Button1/Tertiary/Icons/Vector.png" alt="Medium"></a>
       </li>
-    </ul>
-    <p id="footer-email">whateveremail@gmail.com</p>
-    </section>
+     </ul>
+     <p id="footer-email">whateveremail@gmail.com</p>
+   </section>
   </footer>
 </body>
 </html>
