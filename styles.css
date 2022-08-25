@@ -29,6 +29,7 @@ nav {
 
 #menu-div {
   display: flex;
+  width: fit-content;
 }
 
 #linkholder {
@@ -410,6 +411,14 @@ footer {
 }
 
 @media (min-width: 768px) {
+  nav {
+    width: 90%;
+  }
+
+  #menu-div {
+    padding-right: 10%;
+  }
+
   #menu {
     display: none;
   }
