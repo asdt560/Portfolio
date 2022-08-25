@@ -9,52 +9,44 @@
     <title>Portfolio</title>
 </head>
 <body>
-  <div id="image-container">
-    <img id="ellipses" src="./images/Top-circles.png" alt="circles">
-    <img id="background" src="./images/portfolio-background-shapes-mobile@2x.png" alt="background">
-  </div>
-  <header>
+  <header id="navbar">
     <nav>
-      <a class="placeholder">John Doe</a>
-      <button id="menu">
-        <span class="line"></span> 
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
+      <div id="logo-div">
+        <a class="placeholder">John Doe</a>
+      </div>
+      <div id="menu-div">
+        <button id="menu">
+          <span class="line"></span> 
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <a href="#works" class="navlink" id="portfoliolink">Portfolio</a>
+        <a href="#about" class="navlink" id="aboutlink">About</a>
+        <a href="#form-container" class="navlink" id="contactlink">Contact</a>
+      </div> 
     </nav>
   </header>
   <section class="headline">
-    <header id="headline">
       <h1 class="title">Justo Rago</h1>
       <h2>Software Developer</h2>
-    </header>
   </section>
   <section id="support">
     <p class="blurb">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hesitate to contact me.</p>
+    <div id="list-and-span">
     <span class="divide"></span>
-    <ul id="container">
-      <li class="blue-list">Language</li>
+    <ul id="list-container">
       <li class="subsection">
         <ul>
+          <li class="blue-list">Languages</li>
           <li>Javascript</li>
           <li>Ruby</li>
           <li>Html</li>
           <li>Css</li>
         </ul>
       </li>
-      <li class="blue-list">Skills</li>
-      <li>
+      <li class="subsection">
         <ul>
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
-      </li>
-      <li class="blue-list">Frameworks</li>
-      <li>
-        <ul>
+          <li class="blue-list last">Frameworks</li>
           <li>Bootstrap</li>
           <li>Ruby on Rails</li>
           <li>RSPec</li>
@@ -62,87 +54,24 @@
           <li>Selenium</li>
         </ul>
       </li>
+      <li class="subsection">
+        <ul id="skills-list">
+          <li class="blue-list" >Skills</li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </li>
     </ul>
     <span class="divide"></span>
+  </div>
   </section>
   <section id="links">
-    <a href="https://github.com/asdt560"><img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
-    <a href="https://www.linkedin.com/in/justo-rago-0714b5208/"><img src="./images/Normal-Button/Tertiary/Icons/Group.png" alt="LinkedIn"></a>
-    <a href="https://angel.co/"><img src="./images/Normal-Button3/Tertiary/Icons/Vector.png" alt="AngelList"></a>
-    <a href="https://twitter.com/JustoRago"><img src="./images/Normal-Button2/Tertiary/Icons/Vector.png" alt="Twitter"></a>
-    <a href="https://medium.com/"><img src="./images/Normal-Button1/Tertiary/Icons/Vector.png" alt="Medium"></a>
-  </section>
-  <section id="internal">
-    <a id="work-link" href="#works"><img src="./images/Group-55.png" alt="arrow">Work</a>
-  </section>
-  <section id="works">
-    <h4>MY RECENT WORK</h4>
-    <span id="span3" class="divide"></span>
-    <section id="c1" class="card">
-      <img class="placeholder-image" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
-      <h5 class="card-title">Multi-Post Stories</h5>
-      <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-      <ul class="card-list">
-        <li>Html</li>
-        <li>Css</li>
-        <li>Javascript</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </section>
-    <section id="c2" class="card">
-      <img class="placeholder-image" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
-      <h5 class="card-title">Multi-Post Stories</h5>
-      <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-      <ul class="card-list">
-        <li>Html</li>
-        <li>Css</li>
-        <li>Javascript</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </section>
-    <section id="c3" class="card">
-      <img class="placeholder-image" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
-      <h5 class="card-title">Multi-Post Stories</h5>
-      <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-      <ul class="card-list">
-        <li>Html</li>
-        <li>Css</li>
-        <li>Javascript</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </section>
-    <section id="c4" class="card">
-      <img class="placeholder-image" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
-      <h5 class="card-title">Multi-Post Stories</h5>
-      <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-      <ul class="card-list">
-        <li>Html</li>
-        <li>Css</li>
-        <li>Javascript</li>
-      </ul>
-      <button class="project-button">See Project</button>
-      <span class="divide"></span>
-    </section>
-  </section>
-  <section id="about">
-    <h6 class="title">About Me</h6>
-    <p id="about-blurb" class="blurb">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-    <button id="resume" class="project-button">Get my resume</button>
-  </section>
-  <section id="form-container">
-    <h6 id="contact-title">CONTACT US</h6>
-    <p class="blurb" id="form-blurb">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it.</p>
-    <form action="https://formspree.io/f/mbjblgra" method="POST">
-      <input class="input-field" type="text" name="name" placeholder="Full name" maxlength="30" required>
-      <input class="input-field" type="email" name="email" placeholder="Email address" required>
-      <textarea class="input-field message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
-      <button id="form-button" class="project-button" type="submit">Get in touch</button>
-    </form>
-  </section>
-  <footer>
-    <section class="links-footer">
-      <span id="footer-span"></span>
-      <ul id="footer-list">
+    <div id="internal-external">
+      <a class="work-link browser" href="#works">Work<img src="./images/Group-55.png" alt="arrow"></a>
+    <ul class="footer-list" id="middlelist">
       <li>
         <a href="https://github.com/asdt560"><img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
       </li>
@@ -159,8 +88,107 @@
         <a href="https://medium.com/"><img src="./images/Normal-Button1/Tertiary/Icons/Vector.png" alt="Medium"></a>
       </li>
     </ul>
-    <p id="footer-email">whateveremail@gmail.com</p>
+    <a class="work-link browser" href="#works"><img src="./images/Group-55.png" alt="arrow">Work</a>
+  </div>
+    <section id="internal">
+      <a class="work-link" href="#works"><img src="./images/Group-55.png" alt="arrow">Work</a>
     </section>
+  </section>
+  <section id="works">
+    <h4>My recent work</h4>
+    <span id="span3" class="divide"></span>
+    <section id="c1" class="card">
+      <img class="placeholder-image" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
+      <div class="card-text">
+        <h5 class="card-title">Multi-Post Stories</h5>
+        <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <ul class="card-list">
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+    </section>
+    <section id="c2" class="card">
+      <img class="placeholder-image even" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
+      <div class="card-text">
+        <h5 class="card-title">Multi-Post Stories</h5>
+        <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <ul class="card-list">
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+    </section>
+    <section id="c3" class="card">
+      <img class="placeholder-image" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
+      <div class="card-text">
+        <h5 class="card-title">Multi-Post Stories</h5>
+        <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <ul class="card-list">
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+    </section>
+    <section id="c4" class="card">
+      <img class="placeholder-image even" src="./images/Img-Placeholder(1).png" alt="A Placeholder">
+      <div class="card-text">
+        <h5 class="card-title">Multi-Post Stories</h5>
+        <p class="blurb2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <ul class="card-list">
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+    </section>
+    <span class="divide"></span>
+  </section>
+  <section id="about">
+    <h6 class="title" id="about-title">About Me</h6>
+    <p id="about-blurb" class="blurb">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+    <button id="resume" class="project-button">Get my resume</button>
+  </section>
+  <span class="divide"></span>
+  <section id="form-container">
+    <h6 id="contact-title">CONTACT US</h6>
+    <p class="blurb" id="form-blurb">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it.</p>
+    <form action="https://formspree.io/f/mbjblgra" method="POST">
+      <input class="input-field" type="text" name="name" placeholder="Full name" maxlength="30" required>
+      <input class="input-field" type="email" name="email" placeholder="Email address" required>
+      <textarea class="input-field message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+      <button id="form-button" class="project-button" type="submit">Get in touch</button>
+    </form>
+  </section>
+  <footer>
+    <span id="footer-span"></span>
+    <section class="links-footer">
+      <ul class="footer-list">
+      <li>
+        <a href="https://github.com/asdt560"><img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/justo-rago-0714b5208/"><img src="./images/Normal-Button/Tertiary/Icons/Group.png" alt="LinkedIn"></a>
+      </li>
+      <li>
+        <a href="https://angel.co/"><img src="./images/Normal-Button3/Tertiary/Icons/Vector.png" alt="AngelList"></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/JustoRago"><img src="./images/Normal-Button2/Tertiary/Icons/Vector.png" alt="Twitter"></a>
+      </li>
+      <li>
+        <a href="https://medium.com/"><img src="./images/Normal-Button1/Tertiary/Icons/Vector.png" alt="Medium"></a>
+      </li>
+     </ul>
+     <p id="footer-email">whateveremail@gmail.com</p>
+   </section>
   </footer>
 </body>
 </html>
