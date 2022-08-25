@@ -24,13 +24,19 @@ nav {
 }
 
 #logo-div {
-  margin-right: 20%;
   padding-left: 10%;
 }
 
 #menu-div {
-  padding-right: 10%;
   display: flex;
+}
+
+#linkholder {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  position: relative;
+  left: 100px;
 }
 
 .navlink {
@@ -41,9 +47,17 @@ nav {
   font-size: 15px;
   line-height: 20px;
   font-family: 'Roboto', sans-serif;
-  padding-right: 10px;
   text-decoration: none;
+  padding: 5px;
   font-weight: 500;
+  transition: all 0.5s ease-in;
+}
+
+.navlink:hover,
+.navlink:focus {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #191765;
 }
 
 .placeholder {
@@ -52,6 +66,7 @@ nav {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
+  margin: 0;
 }
 
 #menu {
