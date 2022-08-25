@@ -502,6 +502,7 @@ footer {
     background-repeat: no-repeat;
     background-position: top 220px center;
     background-size: initial;
+    align-self: center;
   }
 
   #about-blurb {
