@@ -43,6 +43,7 @@ nav {
   font-family: 'Roboto', sans-serif;
   padding-right: 10px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .placeholder {
@@ -123,7 +124,7 @@ h2 {
   flex-wrap: wrap;
   width: 80%;
   justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .blue-list {
@@ -165,6 +166,10 @@ li {
 
 #internal {
   padding-top: 40px;
+}
+
+.work-link.browser {
+  display: none;
 }
 
 .work-link {
@@ -555,5 +560,29 @@ footer {
     padding-top: 5px;
     margin: 0;
     align-self: center;
+  }
+
+  #links {
+    width: 90%;
+  }
+
+  #internal {
+    display: none;
+  }
+
+  #internal-external {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    height: 40px;
+  }
+
+  #middlelist > li {
+    padding-top: 0;
+  }
+
+  .work-link.browser {
+    display: flex;
   }
 }
