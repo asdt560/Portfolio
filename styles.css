@@ -442,6 +442,12 @@ footer {
     margin: 0;
     text-transform: initial;
     margin-bottom: -70px;
+    margin-left: 100px;
+  }
+
+  #span3 {
+    width: 1200px;
+    margin-left: 70px;
   }
 
   #list-container {
@@ -496,13 +502,14 @@ footer {
   }
 
   #works {
-    grid-template: 1fr 1px 4fr 4fr 4fr 4fr 1px / 100%;
+    grid-template-rows: 1fr 1px 4fr 4fr 4fr 4fr 1px;
     gap: 90px;
     background-image: url(./images/Group\ 65.svg);
     background-repeat: no-repeat;
     background-position: top 220px center;
     background-size: initial;
     align-self: center;
+    width: 100%;
   }
 
   #about-blurb {
