@@ -1,13 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Setup and Mobile First
+# Portfolio: Mobile and Browser
 
-> The start of the Portfolio project, possessing only the toolbar and headline sections. Now expanded with Works and about sections.
+> The Portfolio project, updated with a functional browser version and responsive design.
 
 
 ## Built With
 
 - HTML/CSS
+
+## Getting Started
 
 ## Authors
 
