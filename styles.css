@@ -351,7 +351,7 @@ h4 {
 form {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 24px);
+  width: 80%;
 }
 
 .input-field {
@@ -586,7 +586,7 @@ footer {
 
   #form-container {
     align-self: center;
-    width: 50%;
+    width: 60%;
   }
 
   #contact-title {
@@ -598,6 +598,7 @@ footer {
 
   #form-blurb {
     max-width: 800px;
+    width: 500px;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
