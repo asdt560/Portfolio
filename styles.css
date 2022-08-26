@@ -25,7 +25,6 @@ nav {
 
 #logo-div {
   padding-left: 10%;
-  
 }
 
 #menu-div {
@@ -70,26 +69,6 @@ nav {
   font-size: 18px;
   line-height: 16px;
   margin: 0;
-}
-
-#main-title {
-  animation-duration: 2s;
-  animation-name: change;
-
-}
-
-@keyframes change {
-    from {
-      font-size: 40px;
-    }
-
-    75% {
-      font-size: 120px;
-    }
-
-    to {
-      font-size: 90px;
-    }
 }
 
 #menu {
@@ -433,6 +412,25 @@ footer {
 }
 
 @media (min-width: 768px) {
+  #main-title {
+    animation-duration: 2s;
+    animation-name: change;
+  }
+
+  @keyframes change {
+    from {
+      font-size: 40px;
+    }
+
+    75% {
+      font-size: 120px;
+    }
+
+    to {
+      font-size: 90px;
+    }
+  }
+
   nav {
     width: 90%;
   }
