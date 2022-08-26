@@ -24,13 +24,20 @@ nav {
 }
 
 #logo-div {
-  margin-right: 20%;
   padding-left: 10%;
 }
 
 #menu-div {
-  padding-right: 10%;
   display: flex;
+  width: fit-content;
+}
+
+#linkholder {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  position: relative;
+  left: 100px;
 }
 
 .navlink {
@@ -41,17 +48,27 @@ nav {
   font-size: 15px;
   line-height: 20px;
   font-family: 'Roboto', sans-serif;
-  padding-right: 10px;
   text-decoration: none;
+  padding: 5px;
   font-weight: 500;
+  transition: all 0.5s ease-in;
+}
+
+.navlink:hover,
+.navlink:focus {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #191765;
 }
 
 .placeholder {
+  display: flex;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
+  margin: 0;
 }
 
 #menu {
@@ -80,6 +97,25 @@ span.line {
   color: #7d73fc;
   font-size: 48px;
   margin-bottom: 12px;
+}
+
+#main-title {
+  animation-duration: 2s;
+  animation-name: change;
+}
+
+@keyframes change {
+  from {
+    font-size: 24px;
+  }
+
+  75% {
+    font-size: 90px;
+  }
+
+  to {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -395,6 +431,33 @@ footer {
 }
 
 @media (min-width: 768px) {
+  #main-title {
+    animation-duration: 2s;
+    animation-name: change;
+  }
+
+  @keyframes change {
+    from {
+      font-size: 40px;
+    }
+
+    75% {
+      font-size: 120px;
+    }
+
+    to {
+      font-size: 90px;
+    }
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  #menu-div {
+    padding-right: 10%;
+  }
+
   #menu {
     display: none;
   }
