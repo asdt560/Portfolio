@@ -25,6 +25,7 @@ nav {
 
 #logo-div {
   padding-left: 10%;
+  
 }
 
 #menu-div {
@@ -62,12 +63,33 @@ nav {
 }
 
 .placeholder {
+  display: flex;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
   margin: 0;
+}
+
+#main-title {
+  animation-duration: 2s;
+  animation-name: change;
+
+}
+
+@keyframes change {
+    from {
+      font-size: 40px;
+    }
+
+    75% {
+      font-size: 120px;
+    }
+
+    to {
+      font-size: 90px;
+    }
 }
 
 #menu {
