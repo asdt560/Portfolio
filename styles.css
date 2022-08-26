@@ -99,6 +99,25 @@ span.line {
   margin-bottom: 12px;
 }
 
+#main-title {
+  animation-duration: 2s;
+  animation-name: change;
+}
+
+@keyframes change {
+  from {
+    font-size: 24px;
+  }
+
+  75% {
+    font-size: 90px;
+  }
+
+  to {
+    font-size: 48px;
+  }
+}
+
 h2 {
   font-family: 'Roboto', sans-serif;
   color: white;
