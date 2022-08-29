@@ -9,10 +9,6 @@
 
 - HTML/CSS
 
-## Github Pages
-
-[Portfolio](https://asdt560.github.io/Portfolio/)
-
 ## Getting Started
 
 ## Authors
