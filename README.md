@@ -11,10 +11,6 @@
 
 ## Getting Started
 
-## Github Pages
-
-[Portfolio](https://asdt560.github.io/Portfolio/)
-
 ## Authors
 
 👤 **Justo Rago**
