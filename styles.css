@@ -69,6 +69,7 @@ nav {
   font-size: 18px;
   line-height: 16px;
   margin: 0;
+
 }
 
 #menu {
@@ -113,37 +114,44 @@ span.line {
   left: 0;
   top: 0;
   background-color: #191765;
+  background-image: url(./images/shapes-mobile-menu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #menu-content {
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 40px;
-  height: auto;
+  height: 300px;
 }
 
 .curtainlink {
+  
   display: flex;
   color: #fff;
   font-size: 24px;
   text-decoration: none;
+  justify-content: space-between;
 }
 
 .menu-close {
-  color: #fff;
-  font-size: 16px;
   padding: 12px;
   width: 16px;
-  height: 16px;
+  margin-top: 23px;
   position: relative;
-  left: 400px;
+  left: 68%;
 }
 
 .image-X {
   padding: 20px;
 }
 
+.img-union {
+  width: 5%;
+}
 @keyframes change {
   from {
     font-size: 24px;
