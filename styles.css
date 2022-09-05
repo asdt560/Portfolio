@@ -69,7 +69,6 @@ nav {
   font-size: 18px;
   line-height: 16px;
   margin: 0;
-
 }
 
 #menu {
@@ -129,7 +128,6 @@ span.line {
 }
 
 .curtainlink {
-  
   display: flex;
   color: #fff;
   font-size: 24px;
@@ -152,6 +150,7 @@ span.line {
 .img-union {
   width: 5%;
 }
+
 @keyframes change {
   from {
     font-size: 24px;
