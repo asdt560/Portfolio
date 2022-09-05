@@ -13,6 +13,14 @@
     <title>Portfolio</title>
 </head>
 <body>
+  <div id=menucurtain>
+    <a class="menu-close"><img class="image-X" alt="Close" src="./images/Icon.png" onclick="menuClose()"></a>
+    <div id="menu-content">
+      <a href="#works" class="curtainlink">Portfolio</a>
+      <a href="#about" class="curtainlink">About</a>
+      <a href="#form-container" class="curtainlink">Contact</a>
+    </div>
+  </div>
   <header id="navbar">
     <nav>
       <div id="logo-div">
@@ -20,7 +28,7 @@
       </div>
       <div id="menu-div">
         <div id="linkholder">
-        <button id="menu">
+        <button id="menu" onclick="menuOpen()">
           <span class="line"></span> 
           <span class="line"></span>
           <span class="line"></span>

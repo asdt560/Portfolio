@@ -104,6 +104,46 @@ span.line {
   animation-name: change;
 }
 
+#menucurtain {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #191765;
+}
+
+#menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  height: auto;
+}
+
+.curtainlink {
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.menu-close {
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 400px;
+}
+
+.image-X {
+  padding: 20px;
+}
+
 @keyframes change {
   from {
     font-size: 24px;
