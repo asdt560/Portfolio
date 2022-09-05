@@ -106,6 +106,8 @@ span.line {
 
 #menucurtain {
   display: none;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
   width: 100%;
   position: fixed; /* Stay in place */
@@ -115,32 +117,29 @@ span.line {
   background-color: #191765;
   background-image: url(./images/shapes-mobile-menu.png);
   background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#menu-content {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 40px;
-  height: 300px;
+  background-size: cover;
 }
 
 .curtainlink {
   display: flex;
   color: #fff;
-  font-size: 24px;
   text-decoration: none;
   justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+
+.menutext {
+  font-size: 24px;
+  width: 300px;
+}
+
+#X-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu-close {
-  padding: 12px;
-  width: 16px;
-  margin-top: 23px;
-  position: relative;
-  left: 68%;
+  padding: 10px;
 }
 
 .image-X {
@@ -148,7 +147,9 @@ span.line {
 }
 
 .img-union {
-  width: 5%;
+  height: 20px;
+  width: 20px;
+  align-self: center;
 }
 
 @keyframes change {
