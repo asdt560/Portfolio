@@ -104,6 +104,54 @@ span.line {
   animation-name: change;
 }
 
+#menucurtain {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #191765;
+  background-image: url(./images/shapes-mobile-menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.curtainlink {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0 30px 30px 30px;
+}
+
+.menutext {
+  font-size: 24px;
+  width: 300px;
+}
+
+#X-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-close {
+  padding: 10px;
+}
+
+.image-X {
+  padding: 20px;
+}
+
+.img-union {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+}
+
 @keyframes change {
   from {
     font-size: 24px;

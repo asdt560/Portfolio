@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,22 @@
     <title>Portfolio</title>
 </head>
 <body>
+  <div id=menucurtain>
+    <div id="X-container"><a class="menu-close"><img class="image-X" alt="Close" src="./images/Icon.png" onclick="menuClose()"></a></div>
+      <a href="#works" class="curtainlink" onclick="menuClose()">
+        <p class="menutext" onclick="menuClose()">Portfolio</p>
+        <img src="./images/Union.png" alt="" class="img-union" onclick="menuClose()">
+      </a>
+      <a href="#about" class="curtainlink" onclick="menuClose()">
+        <p class="menutext" onclick="menuClose()">About</p>
+        <img src="./images/Union.png" alt="" class="img-union" onclick="menuClose()">
+
+      </a>
+      <a href="#form-container" class="curtainlink" onclick="menuClose()">
+        <p class="menutext" onclick="menuClose()">Contact</p>
+        <img src="./images/Union.png" alt="" class="img-union" onclick="menuClose()">
+      </a>
+  </div>
   <header id="navbar">
     <nav>
       <div id="logo-div">
@@ -19,11 +36,11 @@
       </div>
       <div id="menu-div">
         <div id="linkholder">
-        <button id="menu">
+        <div id="menu" onclick="menuOpen()">
           <span class="line"></span> 
           <span class="line"></span>
           <span class="line"></span>
-        </button>
+        </div>
         <a href="#works" class="navlink" id="portfoliolink">Portfolio</a>
         <a href="#about" class="navlink" id="aboutlink">About</a>
         <a href="#form-container" class="navlink" id="contactlink">Contact</a>
