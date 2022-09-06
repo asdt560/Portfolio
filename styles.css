@@ -274,9 +274,6 @@ li {
 
 #works {
   display: grid;
-  gap: 20px;
-  grid-template: 0.25fr 1px 7fr 7fr 7fr 7fr 1px / 100%;
-  padding: 20px;
   margin-top: 85px;
   align-items: center;
   background-image: url(./images/portfolio-background-shapes-mobile@2x.png);
@@ -300,6 +297,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 40px;
 }
 
 .placeholder-image {
@@ -368,6 +366,59 @@ h4 {
 
 .project-button:disabled {
   background: #2a2b33;
+}
+
+#popup {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#X-popup {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#popupcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.16);
+  width: 80%;
+  margin: 50px 50px 50px 50px;
+  height: 90%;
+}
+
+.popuptitle {
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+
+.popupimage {
+  padding: 0 20px 0 20px;
+}
+
+.popuptext {
+  color: white;
+  text-align: center;
+  padding: 0 40px 0 40px;
+}
+
+.popupbutton {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 128px;
 }
 
 #about {
@@ -552,7 +603,6 @@ footer {
     color: #9490ff;
     margin: 0;
     text-transform: initial;
-    margin-bottom: -70px;
     margin-left: 100px;
   }
 
@@ -573,10 +623,7 @@ footer {
   .card {
     display: flex;
     flex-direction: row;
-    width: 1100px;
-    height: 450px;
     align-self: center;
-    padding-left: 100px;
   }
 
   .card-text {
@@ -618,8 +665,6 @@ footer {
   }
 
   #works {
-    grid-template-rows: 1fr 1px 4fr 4fr 4fr 4fr 1px;
-    gap: 90px;
     background-image: url(./images/Group\ 65.svg);
     background-repeat: no-repeat;
     background-position: top 220px center;
