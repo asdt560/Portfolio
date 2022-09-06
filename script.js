@@ -77,7 +77,7 @@ arr.forEach((item) => {
     <ul class="card-list" id="project1list">
     ${ret(item.technologies, item)}
     </ul>
-    <button id=${item.id} class="project-button openerbutton">See Project</button>
+    <button id=${item.id} class="project-button openerbutton" onclick="popupOpen(this.id)">See Project</button>
   </div>
 </section>`;
 });
@@ -86,9 +86,10 @@ const popup = document.getElementById('popup');
 const popupbutton = document.getElementsByClassName('openerbutton');
 
 function popupOpen(id) {
+  popup.style.display = 'block';
   arr.forEach((item) => {
     if (id === item.id) {
-      popup.innerHtTML += `<div id="popupcontainer">
+      popup.innerHTML += `<div id="popupcontainer">
     <div id="X-popup">
       <h5 class="popuptitle">${item.name}</h5>
       <a class="menu-close">
@@ -100,42 +101,25 @@ function popupOpen(id) {
     <ul class="card-list">
     ${ret(item.technologies, item)}
     </ul>
+    <div class="popupbuttoncontainer">
     <button class="project-button popupbutton">See Live<img src="./images/Live.svg" alt="Live"></button>
     <button class="project-button popupbutton">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></button>
+    <div>
   </div>`;
     }
   });
 }
 
 popupbutton.forEach((button) => {
-  button.addEventListener('click', popupOpen(button.id));
+  button.addEventListener('click', popupOpen(this.id));
 });
 
-const test = document.getElementById('main-title');
+const closerbutton = document.getElementsByClassName('image-X');
 
-test.addEventListener('click', popupOpen('1'));
-/* const project1 = arr[0];
-console.log(project1);
-window.addEventListener('load', () => {
-  const project1 = arr[0];
-  const cardtext1 = document.getElementById('project1blurb');
-  cardtext1.innerHTML = project1.description;
-  const image1 = document.getElementById('project1image');
-  image1.src = project1.featuredimage;
-  const title1 = document.getElementById('project1title');
-  title1.innerHTML = project1.name;
-  const list1 = document.getElementById('project1list');
+function popupClose() {
+  popup.style.display = 'none';
+}
 
-  const project2 = arr[1];
-}); */
-
-/* <section id="c1" class="card">
-      <img id="project1image" class="placeholder-image" src="placeholder" alt="A Placeholder">
-      <div class="card-text">
-        <h5 class="card-title" id="project1title"></h5>
-        <p class="blurb2" id="project1blurb"></p>
-        <ul class="card-list" id="project1list">
-        </ul>
-        <button class="project-button">See Project</button>
-      </div>
-    </section> */
+closerbutton.forEach((button) => {
+  button.addEventListener('click', popupClose());
+});

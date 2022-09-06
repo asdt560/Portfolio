@@ -377,7 +377,9 @@ h4 {
   left: 0;
   top: 0;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
 }
 
 #X-popup {
@@ -387,14 +389,16 @@ h4 {
 }
 
 #popupcontainer {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.16);
-  width: 80%;
-  margin: 50px 50px 50px 50px;
-  height: 90%;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
 }
 
 .popuptitle {
@@ -405,12 +409,20 @@ h4 {
 
 .popupimage {
   padding: 0 20px 0 20px;
+  min-width: 0;
+  min-height: 0;
 }
 
 .popuptext {
   color: white;
   text-align: center;
   padding: 0 40px 0 40px;
+}
+
+.popupbuttoncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .popupbutton {
