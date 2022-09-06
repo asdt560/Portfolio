@@ -110,8 +110,8 @@ span.line {
   justify-content: flex-start;
   height: 100%;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   background-color: #191765;
@@ -382,6 +382,10 @@ h4 {
   overflow: auto;
 }
 
+#popup > * {
+  flex: 1 1 auto;
+}
+
 #X-popup {
   width: 100%;
   display: flex;
@@ -396,9 +400,14 @@ h4 {
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.16);
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  margin: 0;
+  margin-left: 1.6rem;
+  margin-top: 2rem;
   min-width: 0;
   min-height: 0;
+  width: 90vw;
+  height: 100vh;
+  align-self: center;
+  overflow: hidden;
 }
 
 .popuptitle {
@@ -409,8 +418,6 @@ h4 {
 
 .popupimage {
   padding: 0 20px 0 20px;
-  min-width: 0;
-  min-height: 0;
 }
 
 .popuptext {
@@ -766,5 +773,21 @@ footer {
 
   .work-link.browser {
     display: flex;
+  }
+
+  #popupcontainer {
+    position: absolute;
+    width: 1156px;
+    height: 1176px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 100px 100px 100px 100px;
+  }
+
+  .popupbuttoncontainer {
+    flex-direction: row;
+    align-self: center;
   }
 }

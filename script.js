@@ -86,7 +86,7 @@ const popup = document.getElementById('popup');
 const popupbutton = document.getElementsByClassName('openerbutton');
 
 function popupOpen(id) {
-  popup.style.display = 'block';
+  popup.style.display = 'flex';
   arr.forEach((item) => {
     if (id === item.id) {
       popup.innerHTML += `<div id="popupcontainer">
