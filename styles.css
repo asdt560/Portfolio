@@ -534,6 +534,13 @@ h4 {
   display: none;
 }
 
+#emailerror {
+  padding-left: 12px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 #form-button {
   align-self: center;
   margin-top: 20px;
