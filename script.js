@@ -98,7 +98,7 @@ function popupOpen(id) {
     </div>
     <img class="popupimage" src=${item.featuredimage} alt="placeholder image">
     <p class="popuptext">${item.extradescription}</p>
-    <ul class="card-list">
+    <ul class="card-list popuplist">
     ${ret(item.technologies, item)}
     </ul>
     <div class="popupbuttoncontainer">
