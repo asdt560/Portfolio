@@ -409,7 +409,7 @@ h4 {
   min-width: 90vw;
   min-height: 100vh;
   align-self: center;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .popuptitle {
@@ -532,20 +532,6 @@ h4 {
 
 .label {
   display: none;
-}
-
-#emailerror {
-  padding-left: 12px;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-}
-
-#buttondiv {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #form-button {
