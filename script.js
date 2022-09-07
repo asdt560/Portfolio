@@ -93,7 +93,7 @@ function popupOpen(id) {
     <div id="X-popup">
       <h5 class="popuptitle">${item.name}</h5>
       <a class="menu-close">
-        <img class="image-X" alt="Close" src="./images/Icon.png" onclick="popupClose()">
+        <img class="image-X modal-X" alt="Close" src="./images/Icon.png" onclick="popupClose()">
       </a>
     </div>
     <img class="popupimage" src=${item.featuredimage} alt="placeholder image">
@@ -102,8 +102,8 @@ function popupOpen(id) {
     ${ret(item.technologies, item)}
     </ul>
     <div class="popupbuttoncontainer">
-    <button class="project-button popupbutton">See Live<img src="./images/Live.svg" alt="Live"></button>
-    <button class="project-button popupbutton">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></button>
+    <button class="project-button popupbutton one">See Live<img src="./images/Live.svg" alt="Live"></button>
+    <button class="project-button popupbutton two">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></button>
     <div>
   </div>`;
     }

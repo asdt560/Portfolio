@@ -389,7 +389,7 @@ h4 {
 #X-popup {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #popupcontainer {
@@ -406,7 +406,7 @@ h4 {
   margin: 20px;
   margin-left: 0;
   left: 0;
-  height: 820px;
+  height: fit-content;
   min-width: 90vw;
   min-height: 100vh;
   align-self: center;
@@ -418,10 +418,12 @@ h4 {
   color: #fff;
   font-size: 1.25em;
   line-height: 1.75em;
+  margin-left: 24px;
 }
 
 .popupimage {
   padding: 0 20px 0 20px;
+  align-self: center;
 }
 
 .popuptext {
@@ -796,19 +798,26 @@ footer {
 
   #popupcontainer {
     position: absolute;
-    width: 1156px;
-    height: 1176px;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: 24px 0 48px 48px;
+    margin: 24px 24px 48px 24px;
     align-self: center;
   }
 
   .popuptitle {
     font-size: 40px;
     line-height: 32px;
+  }
+
+  .modal-X {
+    margin-top: 24px;
+  }
+
+  .popupimage {
+    height: 500px;
+    max-width: 1100px;
   }
 
   .popuptext {
@@ -828,6 +837,15 @@ footer {
     justify-content: space-between;
     align-self: center;
     align-items: center;
+    align-content: space-between;
     width: fit-content;
+  }
+
+  .popupbutton.one {
+    margin-right: 40px;
+  }
+
+  .popupbutton.two {
+    margin-left: 40px;
   }
 }
