@@ -534,6 +534,20 @@ h4 {
   display: none;
 }
 
+#emailerror {
+  padding-left: 12px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#buttondiv {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #form-button {
   align-self: center;
   margin-top: 20px;

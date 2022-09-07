@@ -133,20 +133,25 @@
   <section id="form-container">
     <h6 id="contact-title">CONTACT US</h6>
     <p class="blurb" id="form-blurb">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it.</p>
-    <form name="form" id="form" action="https://formspree.io/f/mbjblgra" method="POST">
+    <form name="form" id="form" onsubmit="return validator(this)" action="https://formspree.io/f/mbjblgra" method="POST">
       <div class="input">
         <label class="label" for="name">Name</label>
         <input class="input-field" type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>
+        <small></small>
       </div>
       <div class="input">
         <label class="label" for="email">Email</label>
-        <input class="input-field" type="email" id="email" name="email" placeholder="Email address" required>
+        <input class="input-field" type="email" id="email" name="email" placeholder="Email address">
       </div>
       <div class="input">
         <label class="label" for="textarea">Message</label>
         <textarea class="input-field message" id="textarea" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+        <small></small>
       </div>
-      <button id="form-button" class="project-button" type="submit">Get in touch</button>
+      <div id="buttondiv">
+        <small id="emailerror"></small>
+        <button id="form-button" class="project-button" type="submit">Get in touch</button>
+      </div>   
     </form>
   </section>
   <footer>

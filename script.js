@@ -83,8 +83,7 @@ arr.forEach((item) => {
 });
 const popup = document.getElementById('popup');
 
-const popupbutton = document.getElementsByClassName('openerbutton');
-
+// eslint-disable-next-line no-unused-vars
 function popupOpen(id) {
   popup.style.display = 'flex';
   arr.forEach((item) => {
@@ -109,17 +108,28 @@ function popupOpen(id) {
     }
   });
 }
-
-popupbutton.forEach((button) => {
-  button.addEventListener('click', popupOpen(this.id));
-});
-
+// eslint-disable-next-line no-unused-vars
 const closerbutton = document.getElementsByClassName('image-X');
 
+// eslint-disable-next-line no-unused-vars
 function popupClose() {
   popup.style.display = 'none';
 }
 
-closerbutton.forEach((button) => {
-  button.addEventListener('click', popupClose());
-});
+// eslint-disable-next-line no-unused-vars
+const form = document.getElementById('form');
+
+// eslint-disable-next-line no-unused-vars
+function validator(form) {
+  const msgholder = document.getElementById('emailerror');
+  const regex = /[A-Z]/g;
+  const errormsg = 'The content of the email field has to be in lower case!';
+  const emailcontent = form.email.value;
+  console.log(emailcontent);
+  if (regex.test(emailcontent)) {
+    console.log(errormsg);
+    msgholder.innerHTML = errormsg;
+    return false;
+  }
+  return true;
+}
