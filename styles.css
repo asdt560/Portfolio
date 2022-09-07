@@ -413,6 +413,7 @@ h4 {
 }
 
 .popuptitle {
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   font-size: 1.25em;
   line-height: 1.75em;
@@ -423,6 +424,7 @@ h4 {
 }
 
 .popuptext {
+  font-family: 'Roboto', sans-serif;
   color: white;
   text-align: center;
   padding: 0 40px 0 40px;
@@ -801,6 +803,11 @@ footer {
     bottom: 0;
     margin: 24px 0 48px 48px;
     align-self: center;
+  }
+
+  .popuptitle {
+    font-size: 40px;
+    line-height: 32px;
   }
 
   .popuptext {
