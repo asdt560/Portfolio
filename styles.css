@@ -663,10 +663,10 @@ footer {
     display: flex;
     flex-direction: row;
     align-self: center;
+    align-items: center;
   }
 
   .card-text {
-    align-self: flex-end;
     padding-left: 24px;
     margin-right: 24px;
   }
@@ -692,11 +692,12 @@ footer {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    margin-top: 55px;
   }
 
   .placeholder-image {
     width: 684px;
-    height: 448px;
+    height: 459px;
   }
 
   .placeholder-image.even {
@@ -706,7 +707,7 @@ footer {
   #works {
     background-image: url(./images/Group\ 65.svg);
     background-repeat: no-repeat;
-    background-position: top 220px center;
+    background-position: top center;
     background-size: initial;
     align-self: center;
     width: 100%;
