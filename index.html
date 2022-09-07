@@ -133,10 +133,19 @@
   <section id="form-container">
     <h6 id="contact-title">CONTACT US</h6>
     <p class="blurb" id="form-blurb">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it.</p>
-    <form action="https://formspree.io/f/mbjblgra" method="POST">
-      <input class="input-field" type="text" name="name" placeholder="Full name" maxlength="30" required>
-      <input class="input-field" type="email" name="email" placeholder="Email address" required>
-      <textarea class="input-field message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+    <form name="form" id="form" action="https://formspree.io/f/mbjblgra" method="POST">
+      <div class="input">
+        <label class="label" for="name">Name</label>
+        <input class="input-field" type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>
+      </div>
+      <div class="input">
+        <label class="label" for="email">Email</label>
+        <input class="input-field" type="email" id="email" name="email" placeholder="Email address" required>
+      </div>
+      <div class="input">
+        <label class="label" for="textarea">Message</label>
+        <textarea class="input-field message" id="textarea" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+      </div>
       <button id="form-button" class="project-button" type="submit">Get in touch</button>
     </form>
   </section>

@@ -486,10 +486,10 @@ h4 {
   width: 100%;
 }
 
-form {
+#form {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 85%;
 }
 
 .input-field {
@@ -503,7 +503,7 @@ form {
 }
 
 .input-field:valid {
-  border: 1.5px solid #9490ff;
+  border: 2px solid #9490ff;
   color: #191765;
 }
 
@@ -528,6 +528,15 @@ form {
 #form-blurb {
   color: #f5f5ff;
   font-family: 'Inter', sans-serif;
+}
+
+.label {
+  display: none;
+}
+
+#form-button {
+  align-self: center;
+  margin-top: 20px;
 }
 
 footer {
@@ -740,7 +749,7 @@ footer {
   #form-button {
     align-self: center;
     width: 160px;
-    margin-top: 90px;
+    margin-top: 30px;
   }
 
   .links-footer {
