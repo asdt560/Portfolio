@@ -409,7 +409,7 @@ h4 {
   min-width: 90vw;
   min-height: 100vh;
   align-self: center;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .popuptitle {
