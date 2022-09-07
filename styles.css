@@ -110,8 +110,8 @@ span.line {
   justify-content: flex-start;
   height: 100%;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   background-color: #191765;
@@ -274,9 +274,6 @@ li {
 
 #works {
   display: grid;
-  gap: 20px;
-  grid-template: 0.25fr 1px 7fr 7fr 7fr 7fr 1px / 100%;
-  padding: 20px;
   margin-top: 85px;
   align-items: center;
   background-image: url(./images/portfolio-background-shapes-mobile@2x.png);
@@ -300,6 +297,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 40px;
 }
 
 .placeholder-image {
@@ -368,6 +366,98 @@ h4 {
 
 .project-button:disabled {
   background: #2a2b33;
+}
+
+#popup {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+#popup > * {
+  flex: 1 1 auto;
+}
+
+#X-popup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#popupcontainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  left: 0;
+  height: fit-content;
+  min-width: 90vw;
+  min-height: 100vh;
+  align-self: center;
+  overflow: hidden;
+}
+
+.popuptitle {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1.75em;
+  margin-left: 24px;
+}
+
+.popupimage {
+  padding: 0 20px 0 20px;
+  align-self: center;
+}
+
+.popuptext {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 0 40px 0 40px;
+}
+
+.popuplist {
+  align-self: center;
+  padding: 0;
+}
+
+.popuplist > li:first-child {
+  border-left: 1px solid hsl(0, 0%, 33%);
+  border-right: 1px solid hsl(0, 0%, 33%);
+}
+
+.popuplist > li:last-child {
+  border-right: 1px solid hsl(0, 0%, 33%);
+}
+
+.popupbuttoncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popupbutton {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 128px;
 }
 
 #about {
@@ -552,7 +642,6 @@ footer {
     color: #9490ff;
     margin: 0;
     text-transform: initial;
-    margin-bottom: -70px;
     margin-left: 100px;
   }
 
@@ -573,14 +662,11 @@ footer {
   .card {
     display: flex;
     flex-direction: row;
-    width: 1100px;
-    height: 450px;
     align-self: center;
-    padding-left: 100px;
+    align-items: center;
   }
 
   .card-text {
-    align-self: flex-end;
     padding-left: 24px;
     margin-right: 24px;
   }
@@ -606,11 +692,12 @@ footer {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    margin-top: 55px;
   }
 
   .placeholder-image {
     width: 684px;
-    height: 448px;
+    height: 459px;
   }
 
   .placeholder-image.even {
@@ -618,11 +705,9 @@ footer {
   }
 
   #works {
-    grid-template-rows: 1fr 1px 4fr 4fr 4fr 4fr 1px;
-    gap: 90px;
     background-image: url(./images/Group\ 65.svg);
     background-repeat: no-repeat;
-    background-position: top 220px center;
+    background-position: top center;
     background-size: initial;
     align-self: center;
     width: 100%;
@@ -709,5 +794,58 @@ footer {
 
   .work-link.browser {
     display: flex;
+  }
+
+  #popupcontainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 24px 24px 48px 24px;
+    align-self: center;
+  }
+
+  .popuptitle {
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .modal-X {
+    margin-top: 24px;
+  }
+
+  .popupimage {
+    height: 500px;
+    max-width: 1100px;
+  }
+
+  .popuptext {
+    width: 600px;
+    line-height: 30px;
+    align-self: center;
+  }
+
+  .popuplist {
+    align-self: center;
+    margin-bottom: 10px;
+    height: fit-content;
+  }
+
+  .popupbuttoncontainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    align-content: space-between;
+    width: fit-content;
+  }
+
+  .popupbutton.one {
+    margin-right: 40px;
+  }
+
+  .popupbutton.two {
+    margin-left: 40px;
   }
 }
