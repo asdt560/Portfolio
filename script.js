@@ -83,7 +83,7 @@ arr.forEach((item) => {
 });
 const popup = document.getElementById('popup');
 
-
+// eslint-disable-next-line no-unused-vars
 function popupOpen(id) {
   popup.style.display = 'flex';
   arr.forEach((item) => {
