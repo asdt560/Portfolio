@@ -1,9 +1,9 @@
-// eslint-disable-next-line no-unused-vars
+
 function menuOpen() {
   document.getElementById('menucurtain').style.display = 'flex';
 }
 
-// eslint-disable-next-line no-unused-vars
+
 function menuClose() {
   document.getElementById('menucurtain').style.display = 'none';
 }
@@ -83,7 +83,7 @@ arr.forEach((item) => {
 });
 const popup = document.getElementById('popup');
 
-// eslint-disable-next-line no-unused-vars
+
 function popupOpen(id) {
   popup.style.display = 'flex';
   arr.forEach((item) => {
@@ -108,18 +108,15 @@ function popupOpen(id) {
     }
   });
 }
-// eslint-disable-next-line no-unused-vars
+
 const closerbutton = document.getElementsByClassName('image-X');
 
-// eslint-disable-next-line no-unused-vars
 function popupClose() {
   popup.style.display = 'none';
 }
 
-// eslint-disable-next-line no-unused-vars
 const form = document.getElementById('form');
 
-// eslint-disable-next-line no-unused-vars
 function validator(form) {
   const msgholder = document.getElementById('emailerror');
   const regex = /[A-Z]/g;
