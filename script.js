@@ -147,14 +147,12 @@ form.addEventListener('input', () => {
 });
 
 function fillfield(input) {
-  if (input) {
-    form.name.textContent = input.nameinput.value;
-    console.log(input.nameinput);
-    form.email.textContent = input.emailinput.value;
-    console.log(input.emailinput);
-    form.textarea.textContent = input.textareainput.value;
-    console.log(input.textareainput);
-  }
+  form.name.textContent = input.nameinput.value;
+  console.log(input.nameinput);
+  form.email.textContent = input.emailinput.value;
+  console.log(input.emailinput);
+  form.textarea.textContent = input.textareainput.value;
+  console.log(input.textareainput);
 }
 
 window.addEventListener('load', () => {

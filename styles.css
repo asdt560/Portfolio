@@ -539,6 +539,16 @@ h4 {
   margin-top: 20px;
 }
 
+#emailerror {
+  color: white;
+  align-self: center;
+}
+
+#buttondiv {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   width: 100%;
   display: flex;
