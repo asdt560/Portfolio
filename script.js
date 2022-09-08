@@ -108,15 +108,12 @@ function popupOpen(id) {
     }
   });
 }
-// eslint-disable-next-line no-unused-vars
-const closerbutton = document.getElementsByClassName('image-X');
 
 // eslint-disable-next-line no-unused-vars
 function popupClose() {
   popup.style.display = 'none';
 }
 
-// eslint-disable-next-line no-unused-vars
 const form = document.getElementById('form');
 
 // eslint-disable-next-line no-unused-vars
@@ -125,11 +122,33 @@ function validator(form) {
   const regex = /[A-Z]/g;
   const errormsg = 'The content of the email field has to be in lower case!';
   const emailcontent = form.email.value;
-  console.log(emailcontent);
   if (regex.test(emailcontent)) {
-    console.log(errormsg);
     msgholder.innerHTML = errormsg;
     return false;
   }
   return true;
 }
+
+form.addEventListener('input', () => {
+  const formName = document.getElementById('name');
+  const formEmail = document.getElementById('email');
+  const formTextArea = document.getElementById('textarea');
+  const object = {
+    nameinput: formName.value,
+    emailinput: formEmail.value,
+    textareainput: formTextArea.value,
+  };
+  window.localStorage.setItem('storedInfo', JSON.stringify(object));
+});
+
+function fillfield(input) {
+  form.name.value = input.nameinput;
+  form.email.value = input.emailinput;
+  form.textarea.textContent = input.textareainput;
+}
+
+window.addEventListener('load', () => {
+  const info = window.localStorage.getItem('storedInfo');
+  const infoObj = JSON.parse(info);
+  fillfield(infoObj);
+});
