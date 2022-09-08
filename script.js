@@ -143,16 +143,12 @@ form.addEventListener('input', () => {
 
 function fillfield(input) {
   form.name.value = input.nameinput;
-  console.log(input.nameinput);
   form.email.value = input.emailinput;
-  console.log(input.emailinput);
   form.textarea.textContent = input.textareainput;
-  console.log(form.textarea.textContent);
 }
 
 window.addEventListener('load', () => {
   const info = window.localStorage.getItem('storedInfo');
   const infoObj = JSON.parse(info);
-  console.log(infoObj);
   fillfield(infoObj);
 });
