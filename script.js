@@ -1,9 +1,9 @@
-
+// eslint-disable-next-line no-unused-vars
 function menuOpen() {
   document.getElementById('menucurtain').style.display = 'flex';
 }
 
-
+// eslint-disable-next-line no-unused-vars
 function menuClose() {
   document.getElementById('menucurtain').style.display = 'none';
 }
@@ -109,14 +109,14 @@ function popupOpen(id) {
   });
 }
 
-const closerbutton = document.getElementsByClassName('image-X');
-
+// eslint-disable-next-line no-unused-vars
 function popupClose() {
   popup.style.display = 'none';
 }
 
 const form = document.getElementById('form');
 
+// eslint-disable-next-line no-unused-vars
 function validator(form) {
   const msgholder = document.getElementById('emailerror');
   const regex = /[A-Z]/g;
