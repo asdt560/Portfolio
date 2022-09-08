@@ -125,9 +125,7 @@ function validator(form) {
   const regex = /[A-Z]/g;
   const errormsg = 'The content of the email field has to be in lower case!';
   const emailcontent = form.email.value;
-  console.log(emailcontent);
   if (regex.test(emailcontent)) {
-    console.log(errormsg);
     msgholder.innerHTML = errormsg;
     return false;
   }
@@ -147,12 +145,12 @@ form.addEventListener('input', () => {
 });
 
 function fillfield(input) {
-  form.name.textContent = input.nameinput.value;
+  form.name.value = input.nameinput;
   console.log(input.nameinput);
-  form.email.textContent = input.emailinput.value;
+  form.email.value = input.emailinput;
   console.log(input.emailinput);
-  form.textarea.textContent = input.textareainput.value;
-  console.log(input.textareainput);
+  form.textarea.textContent = input.textareainput;
+  console.log(form.textarea.textContent);
 }
 
 window.addEventListener('load', () => {
