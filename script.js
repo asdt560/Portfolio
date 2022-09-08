@@ -133,3 +133,33 @@ function validator(form) {
   }
   return true;
 }
+
+form.addEventListener('input', () => {
+  const formName = document.getElementById('name');
+  const formEmail = document.getElementById('email');
+  const formTextArea = document.getElementById('textarea');
+  const object = {
+    nameinput: formName.value,
+    emailinput: formEmail.value,
+    textareainput: formTextArea.value,
+  };
+  window.localStorage.setItem('storedInfo', JSON.stringify(object));
+});
+
+function fillfield(input) {
+  if (input) {
+    form.name.textContent = input.nameinput.value;
+    console.log(input.nameinput);
+    form.email.textContent = input.emailinput.value;
+    console.log(input.emailinput);
+    form.textarea.textContent = input.textareainput.value;
+    console.log(input.textareainput);
+  }
+}
+
+window.addEventListener('load', () => {
+  const info = window.localStorage.getItem('storedInfo');
+  const infoObj = JSON.parse(info);
+  console.log(infoObj);
+  fillfield(infoObj);
+});
