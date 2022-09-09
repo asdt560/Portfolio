@@ -85,7 +85,7 @@ const popup = document.getElementById('popup');
 
 // eslint-disable-next-line no-unused-vars
 function popupOpen(id) {
-  popup.style.display = 'flex';
+  popup.style.display = 'inline';
   arr.forEach((item) => {
     if (id === item.id) {
       popup.innerHTML += `<div id="popupcontainer">
