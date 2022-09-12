@@ -5,7 +5,7 @@ function menuOpen() {
 
 // eslint-disable-next-line no-unused-vars
 function menuClose() {
-  document.getElementById('menucurtan').style.display = 'none';
+  document.getElementById('menucurtain').style.display = 'none';
 }
 
 const arr = [
