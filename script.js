@@ -5,7 +5,7 @@ function menuOpen() {
 
 // eslint-disable-next-line no-unused-vars
 function menuClose() {
-  document.getElementById('menucurtain').style.display = 'none';
+  document.getElementById('menucurtan').style.display = 'none';
 }
 
 const arr = [
@@ -69,13 +69,13 @@ const ret = (arr) => {
 };
 const cards = document.getElementById('cards');
 arr.forEach((item) => {
-  cards.innerHTML += `<section id="c1" class="card">
+  cards.innerHTML += `<section class="card">
   <img id="project1image" class="placeholder-image" src=${item.featuredimage} alt="A Placeholder">
   <div class="card-text">
     <h5 class="card-title" id="project1title">${item.name}</h5>
     <p class="blurb2" id="project1blurb">${item.description}</p>
     <ul class="card-list" id="project1list">
-    ${ret(item.technologies, item)}
+    ${ret(item.technologies)}
     </ul>
     <button id=${item.id} class="project-button openerbutton" onclick="popupOpen(this.id)">See Project</button>
   </div>
@@ -85,7 +85,7 @@ const popup = document.getElementById('popup');
 
 // eslint-disable-next-line no-unused-vars
 function popupOpen(id) {
-  popup.style.display = 'flex';
+  popup.style.display = 'inline';
   arr.forEach((item) => {
     if (id === item.id) {
       popup.innerHTML += `<div id="popupcontainer">
@@ -98,7 +98,7 @@ function popupOpen(id) {
     <img class="popupimage" src=${item.featuredimage} alt="placeholder image">
     <p class="popuptext">${item.extradescription}</p>
     <ul class="card-list popuplist">
-    ${ret(item.technologies, item)}
+    ${ret(item.technologies)}
     </ul>
     <div class="popupbuttoncontainer">
     <button class="project-button popupbutton one">See Live<img src="./images/Live.svg" alt="Live"></button>
@@ -121,7 +121,7 @@ function validator(form) {
   const msgholder = document.getElementById('emailerror');
   const regex = /[A-Z]/g;
   const errormsg = 'The content of the email field has to be in lower case!';
-  const emailcontent = form.email.value;
+  const emailcontent = form.email.text;
   if (regex.test(emailcontent)) {
     msgholder.innerHTML = errormsg;
     return false;
@@ -144,11 +144,11 @@ form.addEventListener('input', () => {
 function fillfield(input) {
   form.name.value = input.nameinput;
   form.email.value = input.emailinput;
-  form.textarea.textContent = input.textareainput;
+  form.textarea.value = input.textareainput;
 }
 
 window.addEventListener('load', () => {
   const info = window.localStorage.getItem('storedInfo');
-  const infoObj = JSON.parse(info);
+  const infoObj = info;
   fillfield(infoObj);
 });
