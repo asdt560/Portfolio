@@ -11,14 +11,14 @@ function menuClose() {
 const arr = [
   {
     id: '1',
-    name: 'Multi-Post Stories',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    extradescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredimage: './images/Snapshoot-Popup.svg',
+    name: 'To-Do List',
+    description: 'A simple application designed to keep track of tasks that need to be done. Allows for editing tasks, erasing them, marking them as completed and clearing all completed tasks.',
+    extradescription: 'A simple application designed to keep track of tasks that need to be done. Allows for editing tasks, erasing them, marking them as completed and clearing all completed tasks.',
+    featuredimage: './images/To-Do-List-Img.png',
     technologies: [
       'html', 'css', 'javascript',
     ],
-    liveversion: 'placeholder',
+    liveversion: 'https://asdt560.github.io/Portfolio/',
     source: 'https://github.com/asdt560/Portfolio',
   },
   {
@@ -31,7 +31,7 @@ const arr = [
       'html', 'css', 'javascript',
     ],
     liveversion: 'placeholder',
-    source: 'https://github.com/asdt560/Portfolio',
+    source: 'https://github.com/asdt560',
   },
   {
     id: '3',
@@ -43,7 +43,7 @@ const arr = [
       'html', 'css', 'javascript',
     ],
     liveversion: 'placeholder',
-    source: 'https://github.com/asdt560/Portfolio',
+    source: 'https://github.com/asdt560',
   },
   {
     id: '4',
@@ -55,7 +55,7 @@ const arr = [
       'html', 'css', 'javascript',
     ],
     liveversion: 'placeholder',
-    source: 'https://github.com/asdt560/Portfolio',
+    source: 'https://github.com/asdt560',
   },
 ];
 
@@ -101,8 +101,8 @@ function popupOpen(id) {
     ${ret(item.technologies)}
     </ul>
     <div class="popupbuttoncontainer">
-    <button class="project-button popupbutton one">See Live<img src="./images/Live.svg" alt="Live"></button>
-    <button class="project-button popupbutton two">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></button>
+    <button class="project-button popupbutton one" type="button" on.click="location.href='${item.liveversion}'">See Live<img src="./images/Live.svg" alt="Live"></button>
+    <button class="project-button popupbutton two" type="button" on.click="location.href='${item.source}'">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></button>
     <div>
   </div>`;
     }
