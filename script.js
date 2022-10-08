@@ -18,8 +18,8 @@ const arr = [
     technologies: [
       'html', 'css', 'javascript',
     ],
-    liveversion: 'https://asdt560.github.io/Portfolio/',
-    source: 'https://github.com/asdt560/Portfolio',
+    liveversion: 'https://asdt560.github.io/To-Do-List-Reviewed/',
+    source: 'https://github.com/asdt560/To-Do-List-Reviewed',
   },
   {
     id: '2',
