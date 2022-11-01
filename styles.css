@@ -353,6 +353,7 @@ h4 {
   font-family: 'Roboto', sans-serif;
   color: #edecff;
   font-size: 12px;
+  text-decoration: none;
 }
 
 .project-button:hover {

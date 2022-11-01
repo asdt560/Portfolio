@@ -101,8 +101,8 @@ function popupOpen(id) {
     ${ret(item.technologies)}
     </ul>
     <div class="popupbuttoncontainer">
-    <button class="project-button popupbutton one" type="button" onclick="window.open=(${item.liveversion}, _blank);">See Live<img src="./images/Live.svg" alt="Live"></button>
-    <button class="project-button popupbutton two" type="button" onclick="window.open=(${item.source}, _blank);">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></button>
+    <a class="project-button popupbutton one" href="${item.liveversion}" target="_blank">See Live<img src="./images/Live.svg" alt="Live"></a>
+    <a class="project-button popupbutton two" href="${item.source}" target="_blank">See Source <img src="./images/Normal-Button/Tertiary/Icons/Vector.png" alt="Github"></a>
     <div>
   </div>`;
     }
