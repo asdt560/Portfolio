@@ -23,15 +23,15 @@ const arr = [
   },
   {
     id: '2',
-    name: 'Multi-Post Stories',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    extradescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredimage: './images/Snapshoot-Popup.svg',
+    name: 'Weather Tracker Argentina',
+    description: 'A mobile-first application which displays weather data for a list of cities, pulled from the OpenWeather API. It also displays air pollution data for the same.',
+    extradescription: 'A mobile-first application which displays weather data for a list of cities, pulled from the OpenWeather API. It also displays air pollution data for the same. Currently only displays data for a small number of cities, given the amount of requests the API allows and the need to request pollution data for each city individually.',
+    featuredimage: './images/app-pic.PNG',
     technologies: [
-      'html', 'css', 'javascript',
+      'React', 'Redux', 'Webpack',
     ],
-    liveversion: 'placeholder',
-    source: 'https://github.com/asdt560',
+    liveversion: 'https://weather-pollution-tracker-964571.netlify.app/',
+    source: 'https://github.com/asdt560/weather-metrics-argentina',
   },
   {
     id: '3',
