@@ -85,7 +85,7 @@ const popup = document.getElementById('popup');
 
 // eslint-disable-next-line no-unused-vars
 function popupOpen(id) {
-  popup.style.display = 'inline';
+  popup.style.display = 'block';
   arr.forEach((item) => {
     if (id === item.id) {
       popup.innerHTML += `<div id="popupcontainer">
@@ -111,23 +111,11 @@ function popupOpen(id) {
 
 // eslint-disable-next-line no-unused-vars
 function popupClose() {
+  popup.innerHTML = '';
   popup.style.display = 'none';
 }
 
 const form = document.getElementById('form');
-
-// eslint-disable-next-line no-unused-vars
-function validator(form) {
-  const msgholder = document.getElementById('emailerror');
-  const regex = /[A-Z]/g;
-  const errormsg = 'The content of the email field has to be in lower case!';
-  const emailcontent = form.email.text;
-  if (regex.test(emailcontent)) {
-    msgholder.innerHTML = errormsg;
-    return false;
-  }
-  return true;
-}
 
 form.addEventListener('input', () => {
   const formName = document.getElementById('name');
@@ -148,7 +136,7 @@ function fillfield(input) {
 }
 
 window.addEventListener('load', () => {
-  const info = window.localStorage.getItem('storedInfo');
+  const info = JSON.parse(window.localStorage.getItem('storedInfo'));
   const infoObj = info;
   fillfield(infoObj);
 });
