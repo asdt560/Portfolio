@@ -11,51 +11,51 @@ function menuClose() {
 const arr = [
   {
     id: '1',
-    name: 'To-Do List',
-    description: 'A simple application designed to keep track of tasks that need to be done. Allows for editing tasks, erasing them, marking them as completed and clearing all completed tasks.',
-    extradescription: 'A simple application designed to keep track of tasks that need to be done. Allows for editing tasks, erasing them, marking them as completed and clearing all completed tasks.',
-    featuredimage: './images/To-Do-List-Img.png',
+    name: 'Doctors\' Appointments',
+    description: 'Full stack application with a Ruby on Rails back-end and a React-Redux front-end. Allows a user to log in and see a list of Doctors, of which they can pick any to make an appointment.',
+    extradescription: 'Full stack application with a Ruby on Rails back-end and a React-Redux front-end. Allows a user to log in and see a list of Doctors, of which they can pick any to make an appointment. Authorized users may add new doctors or delete existing ones',
+    featuredimage: './images/doctors-img.png',
     technologies: [
-      'html', 'css', 'javascript',
+      'React', 'Redux', 'RoR', 'PostgreSQL', 'Tailwind CSS',
     ],
-    liveversion: 'https://asdt560.github.io/To-Do-List-Reviewed/',
-    source: 'https://github.com/asdt560/To-Do-List-Reviewed',
+    liveversion: 'https://doctors-reservations.netlify.app',
+    source: 'https://github.com/JonahKayizzi/Doctors-Reservations-Backend',
   },
   {
     id: '2',
-    name: 'Weather Tracker Argentina',
+    name: 'Weather and Pollution Tracker',
     description: 'A mobile-first application which displays weather data for a list of cities, pulled from the OpenWeather API. It also displays air pollution data for the same.',
     extradescription: 'A mobile-first application which displays weather data for a list of cities, pulled from the OpenWeather API. It also displays air pollution data for the same. Currently only displays data for a small number of cities, given the amount of requests the API allows and the need to request pollution data for each city individually.',
     featuredimage: './images/app-pic.PNG',
     technologies: [
-      'React', 'Redux', 'Webpack',
+      'React', 'Redux', 'CSS',
     ],
     liveversion: 'https://weather-pollution-tracker-964571.netlify.app/',
     source: 'https://github.com/asdt560/weather-metrics-argentina',
   },
   {
     id: '3',
-    name: 'Multi-Post Stories',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    extradescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredimage: './images/Snapshoot-Popup.svg',
+    name: 'Space Travelers\' Hub',
+    description: 'A React-Redux site that uses data from the SpaceX API to display lists of rockets and missions and allows a user to reserve or join said missions.',
+    extradescription: 'A React-Redux site that uses data from the SpaceX API to display lists of rockets and missions and allows a user to reserve or join said missions. The user can see what missions they have joined and what rockets they have reserved. The user can also cancel their reservations.',
+    featuredimage: './images/spacetravel-img.png',
     technologies: [
-      'html', 'css', 'javascript',
+      'React', 'Redux', 'Bootstrap',
     ],
-    liveversion: 'placeholder',
-    source: 'https://github.com/asdt560',
+    liveversion: 'https://spacetravelers-justorago-camilovela.netlify.app/',
+    source: 'https://github.com/asdt560/rocket-mission-list',
   },
   {
     id: '4',
-    name: 'Multi-Post Stories',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    extradescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
-    featuredimage: './images/Snapshoot-Popup.svg',
+    name: 'Cash-Tracker',
+    description: 'A Ruby on Rails application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
+    extradescription: 'A Ruby on Rails application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
+    featuredimage: './images/cashtracker-img.png',
     technologies: [
-      'html', 'css', 'javascript',
+      'RoR', 'PostgreSQL', 'Bootstrap',
     ],
-    liveversion: 'placeholder',
-    source: 'https://github.com/asdt560',
+    liveversion: 'https://cash-tracker.onrender.com',
+    source: 'https://github.com/asdt560/cash-tracker',
   },
 ];
 
@@ -85,7 +85,7 @@ const popup = document.getElementById('popup');
 
 // eslint-disable-next-line no-unused-vars
 function popupOpen(id) {
-  popup.style.display = 'block';
+  popup.style.display = 'flex';
   arr.forEach((item) => {
     if (id === item.id) {
       popup.innerHTML += `<div id="popupcontainer">
