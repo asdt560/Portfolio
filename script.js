@@ -52,7 +52,7 @@ const arr = [
     extradescription: 'A Ruby on Rails application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
     featuredimage: './images/cashtracker-img.png',
     technologies: [
-      'RoR', 'PostgreSQL', 'Bootstrap',
+      'RoR', 'PostgreSQL', 'CSS',
     ],
     liveversion: 'https://cash-tracker.onrender.com',
     source: 'https://github.com/asdt560/cash-tracker',
