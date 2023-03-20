@@ -8,19 +8,19 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
+  margin: 0;
 }
 
-header {
+#navbar {
   display: flex;
   width: 100%;
-}
-
-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  align-self: center;
   height: 50px;
+  background-color: #191765;
+  position: fixed;
+  top: 0;
 }
 
 #logo-div {
@@ -29,15 +29,10 @@ nav {
 
 #menu-div {
   display: flex;
-  width: fit-content;
 }
 
 #linkholder {
   display: flex;
-  justify-content: space-between;
-  width: 200px;
-  position: relative;
-  left: 100px;
 }
 
 .navlink {
@@ -90,6 +85,7 @@ span.line {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 }
 
 .title {
@@ -139,7 +135,8 @@ span.line {
 }
 
 .menu-close {
-  padding: 10px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .image-X {
@@ -297,7 +294,10 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .placeholder-image {
@@ -312,7 +312,13 @@ h4 {
 }
 
 .card-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-self: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .blurb2 {
@@ -371,16 +377,17 @@ h4 {
 
 #popup {
   display: none;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  z-index: 1;
+  justify-content: center;
   left: 0;
   top: 0;
+  background: #191765;
+  z-index: 1000;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  background-color: rgba(0, 0, 0, 0.3);
-  overflow: auto;
+  overflow: scroll;
 }
 
 #popup > * {
@@ -391,39 +398,39 @@ h4 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 100px;
+  padding-bottom: 12px;
 }
 
 #popupcontainer {
-  position: absolute;
   display: flex;
+  align-self: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   border: 1px solid #fff;
-  background: rgba(255, 255, 255, 0.16);
+  background: #191765;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   top: 0;
   bottom: 0;
   right: 0;
-  margin: 20px;
   left: 0;
+  width: 90%;
+  margin-bottom: 2rem;
   height: fit-content;
-  min-width: 90vw;
-  min-height: 100vh;
-  align-self: center;
-  overflow-y: auto;
 }
 
 .popuptitle {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   font-size: 1.25em;
-  line-height: 1.75em;
-  margin-left: 24px;
+  line-height: 1.5em;
+  padding-left: 1rem;
 }
 
 .popupimage {
   padding: 0 20px 0 20px;
   align-self: center;
+  width: 100%;
 }
 
 .popuptext {
@@ -431,6 +438,7 @@ h4 {
   color: white;
   text-align: center;
   padding: 0 40px 0 40px;
+  margin-top: 12px;
 }
 
 .popuplist {
@@ -490,7 +498,8 @@ h4 {
 #form {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  align-items: center;
+  width: 90%;
 }
 
 .input-field {
@@ -608,14 +617,6 @@ footer {
     }
   }
 
-  nav {
-    width: 90%;
-  }
-
-  #menu-div {
-    padding-right: 10%;
-  }
-
   #menu {
     display: none;
   }
@@ -684,6 +685,7 @@ footer {
     flex-direction: row;
     align-self: center;
     align-items: center;
+    margin-left: 50px;
   }
 
   .card-text {
@@ -836,8 +838,8 @@ footer {
   }
 
   .popupimage {
-    height: 500px;
-    max-width: 1100px;
+    max-width: 600px;
+    max-height: 400px;
   }
 
   .popuptext {
