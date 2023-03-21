@@ -58,7 +58,6 @@ const arr = [
     source: 'https://github.com/asdt560/cash-tracker',
   },
 ];
-
 const ret = (arr) => {
   let tech = '';
   arr.forEach((item) => {
