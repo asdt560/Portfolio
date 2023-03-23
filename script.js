@@ -19,7 +19,7 @@ const arr = [
       'React', 'Redux', 'RoR', 'PostgreSQL', 'Tailwind CSS',
     ],
     liveversion: 'https://doctors-reservations.netlify.app',
-    source: 'https://github.com/JonahKayizzi/Doctors-Reservations-Backend',
+    source: 'https://github.com/asdt560/Doctors-Reservations-Backend',
   },
   {
     id: '2',
