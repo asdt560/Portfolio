@@ -594,7 +594,6 @@ footer {
   text-align: center;
   color: #ebefff;
   margin-top: 0;
-  padding-bottom: 40px;
 }
 
 @media (min-width: 768px) {
@@ -771,6 +770,7 @@ footer {
     justify-content: center;
     align-self: center;
     align-content: center;
+    padding: 1rem;
   }
 
   .footer-list {

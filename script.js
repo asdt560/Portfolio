@@ -137,5 +137,7 @@ function fillfield(input) {
 window.addEventListener('load', () => {
   const info = JSON.parse(window.localStorage.getItem('storedInfo'));
   const infoObj = info;
-  fillfield(infoObj);
+  if (infoObj != null) {
+    fillfield(infoObj);
+  }
 });
