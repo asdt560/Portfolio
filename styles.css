@@ -1,5 +1,4 @@
 body {
-  background-color: #191765;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +8,28 @@ body {
   background-size: 100%;
   background-position: top;
   margin: 0;
+  animation-name: color;
+  animation-duration: 5s;
+  background-color: #191765;
+}
+
+@keyframes color {
+  from {
+    background-color: black;
+    background-position: bottom;
+  }
+
+  30% {
+    background-position: middle;
+  }
+
+  60% {
+    background-color: #090925;
+  }
+
+  to {
+    background-color: #191765;
+  }
 }
 
 #navbar {
@@ -42,7 +63,7 @@ body {
   color: #fff;
   font-size: 15px;
   line-height: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   padding: 5px;
   font-weight: 500;
@@ -58,7 +79,7 @@ body {
 
 .placeholder {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 500;
   font-size: 18px;
@@ -89,7 +110,7 @@ span.line {
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #7d73fc;
   font-size: 48px;
   margin-bottom: 12px;
@@ -164,7 +185,7 @@ span.line {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
   font-size: 30px;
   margin-top: 12px;
@@ -245,7 +266,7 @@ li {
   align-items: center;
 }
 
-#internal {
+#Quicksandnal {
   padding-top: 40px;
 }
 
@@ -259,7 +280,7 @@ li {
   align-items: center;
   height: 50px;
   width: 75px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -277,10 +298,11 @@ li {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -305,7 +327,7 @@ h4 {
 }
 
 .card-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
   font-size: 30px;
   font-weight: 400;
@@ -322,7 +344,7 @@ h4 {
 }
 
 .blurb2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #c8c8d4;
   font-size: 20px;
   font-weight: lighter;
@@ -342,7 +364,7 @@ h4 {
 }
 
 .card-list > li {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 15px;
   padding: 10px;
 }
@@ -356,7 +378,7 @@ h4 {
   height: 49px;
   background: #7d73fc;
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #edecff;
   font-size: 12px;
   text-decoration: none;
@@ -420,7 +442,7 @@ h4 {
 }
 
 .popuptitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #fff;
   font-size: 1.25em;
   line-height: 1.5em;
@@ -434,7 +456,7 @@ h4 {
 }
 
 .popuptext {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
   text-align: center;
   padding: 0 40px 0 40px;
@@ -509,7 +531,7 @@ h4 {
   margin: 12px;
   box-sizing: border-box;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .input-field:valid {
@@ -523,7 +545,7 @@ h4 {
 }
 
 #contact-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -537,7 +559,7 @@ h4 {
 
 #form-blurb {
   color: #f5f5ff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .label {
@@ -586,7 +608,7 @@ footer {
 }
 
 #footer-email {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -596,7 +618,7 @@ footer {
   margin-top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   #main-title {
     animation-duration: 2s;
     animation-name: change;
@@ -628,10 +650,11 @@ footer {
     background-image: url(./images/two\ circles\ header.svg);
     background-repeat: no-repeat;
     background-position: top 180px center;
+    width: 98.7%;
   }
 
   .title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #7d73fc;
     font-size: 90px;
     font-weight: 700;
@@ -639,7 +662,7 @@ footer {
   }
 
   h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -654,7 +677,7 @@ footer {
   }
 
   h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -693,7 +716,7 @@ footer {
   }
 
   .blurb2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     width: 440px;
     line-height: 28px;
   }
@@ -731,7 +754,7 @@ footer {
     background-position: top center;
     background-size: initial;
     align-self: center;
-    width: 100%;
+    width: 100vw;
   }
 
   #about-blurb {
@@ -798,11 +821,11 @@ footer {
     width: 90%;
   }
 
-  #internal {
+  #Quicksandnal {
     display: none;
   }
 
-  #internal-external {
+  #Quicksandnal-external {
     display: flex;
     justify-content: space-between;
     width: 80%;
