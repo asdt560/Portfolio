@@ -12,8 +12,8 @@ const arr = [
   {
     id: '1',
     name: 'Doctors\' Appointments',
-    description: 'Full stack application with a Ruby on Rails back-end and a React-Redux front-end. Allows a user to log in and see a list of Doctors, of which they can pick any to make an appointment.',
-    extradescription: 'Full stack application with a Ruby on Rails back-end and a React-Redux front-end. Allows a user to log in and see a list of Doctors, of which they can pick any to make an appointment. Authorized users may add new doctors or delete existing ones',
+    description: 'A Full-Stack application with a Ruby on Rails back-end and a React-Redux front-end. Allows a user to log in and see a list of Doctors, of which they can pick any to make an appointment.',
+    extradescription: 'A Full-Stack application with a Ruby on Rails back-end and a React-Redux front-end. Allows a user to log in and see a list of Doctors, of which they can pick any to make an appointment. Authorized users may add new doctors or delete existing ones',
     featuredimage: './images/doctors-img.png',
     technologies: [
       'React', 'Redux', 'RoR', 'PostgreSQL', 'Tailwind CSS',
@@ -36,8 +36,8 @@ const arr = [
   {
     id: '3',
     name: 'Space Travelers\' Hub',
-    description: 'A React-Redux site that uses data from the SpaceX API to display lists of rockets and missions and allows a user to reserve or join said missions.',
-    extradescription: 'A React-Redux site that uses data from the SpaceX API to display lists of rockets and missions and allows a user to reserve or join said missions. The user can see what missions they have joined and what rockets they have reserved. The user can also cancel their reservations.',
+    description: 'A Front-End application that uses data from the SpaceX API to display lists of rockets and missions and allows a user to reserve or join said missions.',
+    extradescription: 'A Front-End application that uses data from the SpaceX API to display lists of rockets and missions and allows a user to reserve or join said missions. The user can see what missions they have joined and what rockets they have reserved. The user can also cancel their reservations.',
     featuredimage: './images/spacetravel-img.png',
     technologies: [
       'React', 'Redux', 'Bootstrap',
@@ -48,8 +48,8 @@ const arr = [
   {
     id: '4',
     name: 'Cash-Tracker',
-    description: 'A Ruby on Rails application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
-    extradescription: 'A Ruby on Rails application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
+    description: 'A Full-Stack application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
+    extradescription: 'A Full-Stack application which is designed to allow logged-in users to add and keep track of monetary transactions, creating categories to classify them and then adding them to one or more of them according to what they consider appropriate.',
     featuredimage: './images/cashtracker-img.png',
     technologies: [
       'RoR', 'PostgreSQL', 'CSS',
