@@ -57,6 +57,18 @@ const arr = [
     liveversion: 'https://cash-tracker.onrender.com',
     source: 'https://github.com/asdt560/cash-tracker',
   },
+  {
+    id: '5',
+    name: 'Book-List',
+    description: 'A Front-end application which displays book catalogue information from the Project Gutenberg free ebook library.',
+    extradescription: 'A Front-end application which displays book catalogue information from the Project Gutenberg free ebook library. It allows to search based on several criteria, and to download on various formats',
+    featuredimage: './images/booklist-img.PNG',
+    technologies: [
+      'Angular', 'Tailwind CSS',
+    ],
+    liveversion: 'https://asdt560.github.io/book-list/',
+    source: 'https://github.com/asdt560/book-list',
+  },
 ];
 const ret = (arr) => {
   let tech = '';
